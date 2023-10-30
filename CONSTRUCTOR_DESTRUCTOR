@@ -1,1 +1,32 @@
-C
+CONSTRUCTOR & DESTRUCTOR:
+.Constructors and destructors are special member functions of a class that are used to initialize and clean up the objects of the class, respectively. 
+.Constructors are called when an object of the class is created, and destructors are called when the object is destroyed.
+
+//DESTRUCTOR
+#include <iostream>  
+using namespace std;  
+class Employee  
+ {  
+   public: 
+   int id;
+   string name;
+        Employee(int id,string name)
+        {   this->id=id;
+           this->name=name;
+            
+        }
+        ~Employee()
+        {
+            cout<<"Memory destroy"<<endl;
+        }
+            
+}; 
+
+
+int main()   
+{  
+    Employee e1(920,"Siva"); //creating an object of Employee   
+    cout<<e1.name<<"->"<<e1.id<<endl;
+    
+    return 0;  
+}
