@@ -7,6 +7,8 @@ TYPES:
  2.copy
  3.Parameterized
 
+NOTE:We can define constructors or functions outside of the class with the help of scope resolution operator(::).
+
 
                                                                   CONSTRUCTOR
 #include <iostream>  
