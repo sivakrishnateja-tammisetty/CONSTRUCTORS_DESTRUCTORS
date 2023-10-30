@@ -41,7 +41,7 @@ int main()
 {  
     Employee e1; //creating an object of Employee
     Employee e2(920,"Siva");   
-    Employee e3=e2;
+    Employee e3=e2; // Employee e3(e2); copy construtor call in 2 ways
     cout<<e1.name<<"->"<<e1.id<<endl;
     cout<<e2.name<<"->"<<e2.id<<endl;
     cout<<e3.name<<"->"<<e3.id<<endl;
