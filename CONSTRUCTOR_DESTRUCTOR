@@ -3,9 +3,9 @@ CONSTRUCTOR & DESTRUCTOR:
 .Constructors are called when an object of the class is created, and destructors are called when the object is destroyed.
 
 TYPES:
- 1.Default
- 2.copy
- 3.Parameterized
+ 1.Default-with no arguments
+ 2.copy-initialize and object with the another object of same class type.
+ 3.Parameterized-with parameters
 
 NOTE:We can define constructors or functions outside of the class with the help of scope resolution operator(::).
 
