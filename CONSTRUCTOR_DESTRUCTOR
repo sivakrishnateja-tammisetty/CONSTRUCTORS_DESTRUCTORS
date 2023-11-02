@@ -8,7 +8,7 @@ TYPES:
  3.Parameterized-with parameters
 
 NOTE:We can define constructors or functions outside of the class with the help of scope resolution operator(::).
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
                                                                   CONSTRUCTOR
 #include <iostream>  
@@ -53,9 +53,125 @@ int main()
 
 
 
+-----------------------------------------------------------------------------------------------------------------
+
+                                                               //DESTRUCTOR
 
 
-//DESTRUCTOR
+.Destructor is called automaticaaly when object goes out of the scope.
+.Destructor doesnt take arguments.
+.Destructors cannot be overloaded.
+
+
+
+
+
+#include<iostream>
+using namespace std;
+class Base
+{
+    public:
+    Base()
+    {
+        cout<<"Base Constructor is called"<<endl;
+    }
+    ~Base()
+    {
+        cout<<" Base Destructor is called"<<endl;
+    }
+};
+class Derived:public Base
+{
+    public:
+    Derived()
+    {
+        cout<<"Derived Constructor is called"<<endl;
+    }
+    ~Derived()
+    {
+        cout<<" Derived Destructor is called"<<endl;
+    }
+};
+int main()
+{
+    Base b;
+    
+    return 0;
+}
+
+
+
+
+#include<iostream>
+using namespace std;
+class Base
+{
+    public:
+    Base()
+    {
+        cout<<"Base Constructor is called"<<endl;
+    }
+    ~Base()
+    {
+        cout<<" Base Destructor is called"<<endl;
+    }
+};
+class Derived:public Base
+{
+    public:
+    Derived()
+    {
+        cout<<"Derived Constructor is called"<<endl;
+    }
+    ~Derived()
+    {
+        cout<<" Derived Destructor is called"<<endl;
+    }
+};
+int main()
+{
+    Derived d;
+    
+    return 0;
+}
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+class A
+{
+    public:
+    A()
+    {
+        cout<<"Constructor is called"<<endl;
+    }
+    ~A()
+    {
+        cout<<"Destructor is called"<<endl;
+    }
+};
+void fun()
+{
+    A obj;
+}
+int main()
+{
+    A obj;
+    fun();
+    cout<<"Back to int main fun:"<<endl;
+    
+    return 0;
+}
+
+
+
+
+
 #include <iostream>  
 using namespace std;  
 class Employee  
